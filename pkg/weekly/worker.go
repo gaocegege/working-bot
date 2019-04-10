@@ -64,7 +64,7 @@ func (w Worker) OpenNewIssue(oldIssue github.Issue) error {
 
 	title := fmt.Sprintf("Weekly-%d", weeklyNum)
 	assignee := "gaocegege-bot"
-	body := fmt.Sprintf("联合周报第 %d 期开始投稿 :tada:", weeklyNum)
+	body := fmt.Sprintf("工作周报第 %d 期开始 :tada:", weeklyNum)
 	newIssue := &github.IssueRequest{
 		Title: &title,
 		Labels: &[]string{
